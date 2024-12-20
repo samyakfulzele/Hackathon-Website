@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+:root{
+
+    --dark-blue:#001A6E;
+    --light-blue:#074799;
+    --sky-blue:#0A5EB0;
+    --primary:#F1F0E8;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:"Lexend Deca", serif;
+    color: var(--primary);
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+h2{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.event-section h2{
+    margin-top: -130px;
+}
+.event-section h2,.event-section p{
+    color: var(--primary);
+}
+.bg-color{
+    background-color: var(--dark-blue);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+    outline: none; /* Removes the border on focus */
+    box-shadow: none; /* Removes any shadow effect */
+}
+/*hero-section-start*/
+.hero-section-img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+/*Sponsors Section*/
+
+.scroll-container {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Keep all images in a single row */
+    position: relative;
+    max-width: 100%; /* Make container responsive */
+}
+
+.scroll-content {
+    display: inline-flex; /* Arrange images in a row */
+    animation: scroll 15s linear infinite; /* Smooth scrolling animation */
+}
+
+.scroll-img {
+    width: 150px; /* Adjust image size */
+    height: 100px; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between images */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* Start at the first image */
+    }
+    to {
+        transform: translateX(-100%); /* Scroll all the way through */
+    }
+}
+.sponsors-section h2, .sponsors-section p{
+    color: var(--light-blue);
+}
+.event-section,.sponsors-section,.newsletter-section{
+    background-color: black;
+}
+
+/*Newsletter section*/
+
+.newsletter-section{
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.newsletter-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:var(--primary);
+}
+.newsletter-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+.newsletter-card {
+    background-color:var(--dark-blue);
+    border: none;
+    border-radius: 10px;
+}
+.newsletter-card img {
+    border-radius: 10px;
+}
